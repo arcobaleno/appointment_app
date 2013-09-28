@@ -1,6 +1,12 @@
 AppointmentApp::Application.routes.draw do
 
   root :to => 'static_pages#index'
+
+  match '/user_profile', to: 'static_pages#user_profile'
+  match '/admin', to: 'static_pages#company_admin'
+  match '/company_profile', to: 'static_pages#company_profile'
+  match '/receipt', to: 'static_pages#receipt'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
